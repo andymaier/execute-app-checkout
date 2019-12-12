@@ -20,7 +20,7 @@ public class CheckoutServiceTest {
     CheckoutService cs;
     MockRestServiceServer ms;
 
-    @Before
+    //@Before
     public void setUp() {
 
         RestTemplate rest = new RestTemplate();
@@ -33,16 +33,15 @@ public class CheckoutServiceTest {
         cs = new CheckoutService(rest);
     }
 
-//    @Test
-//    public void enough() {
-//
-//        Item i = new Item();
-//        i.setQuantity(10);
-//        i.setArticleId("42");
-//
-//        assertTrue(cs.enough(i),"Compute enough stock");
-//
-//        ms.verify();
-//    }
+    //@Test
+    public void enough() {
 
+        Item i = new Item();
+        i.setQuantity(10);
+        i.setArticleId("42");
+
+        assertTrue(cs.enough(i),"Compute enough stock");
+
+        ms.verify();
+    }
 }
