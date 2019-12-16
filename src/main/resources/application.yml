@@ -24,3 +24,7 @@ management:
     prometheus:
       enabled: true
 
+opentracing:
+  jaeger:
+    http-sender:
+      url: http://jaegertracing:5778/api/traces
