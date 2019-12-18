@@ -1,16 +1,16 @@
-POST http://localhost:31340/checkouts
+POST http://localhost:11082/checkouts
 Content-Type: application/json
 
 {
   "customer": "41440721-19db-4a02-8fd8-b6a0f3427d46",
   "items": [
     {
-      "articleId": "cab08236-1924-4f90-975d-9e056ed14c48",
-      "quantity": 3
+      "articleId": "9748e6e2-0483-4423-affc-3d9404ba693d",
+      "quantity": 1
     },
     {
-      "articleId": "d996413a-21fb-4c12-b4a8-64996876505b",
-      "quantity": 7
+      "articleId": "b32ca647-b880-4cd3-ab51-224dcd4567e8",
+      "quantity": 1
     }
   ]
 }
