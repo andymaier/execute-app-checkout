@@ -27,4 +27,5 @@ management:
 opentracing:
   jaeger:
     http-sender:
-      url: http://jaegertracing:5778/api/traces
+      url: http://jaegertracing:9411/api/traces
+      
